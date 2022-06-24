@@ -1,0 +1,48 @@
+@use "../utils/colors.scss";
+
+.header--hero {
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(252,227,138,0.9) 40%, rgba(243,129,129,0.9) 100%), url('/assets/images/eagle.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  text-align: center;
+
+  &__text {
+    font-size: 72px;
+    font-family: Kaushan Script;
+    color: colors.$color-white;
+    margin: 146px 0 0 0;
+
+    @media screen and (max-width: 900px) {
+      font-size: 42px;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 24px;
+    }
+  }
+
+  &__title {
+    font-size: 150px;
+    font-family: Montserrat;
+    color: colors.$color-white;
+    max-width: 840px;
+    margin: 0 auto 88px auto;
+
+    @media screen and (max-width: 900px) {
+      font-size: 90px;
+      max-width: 540px;
+    }
+
+    @media screen and (max-width: 600px) {
+      font-size: 42px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}

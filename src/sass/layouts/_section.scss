@@ -1,0 +1,44 @@
+@use "../utils/colors";
+
+.section {
+  padding-top: 41px;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+
+  &__intro {
+    font-size: 24px;
+    font-family: Kaushan Script;
+    margin: 0 0 9px 0;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 30px;
+    font-family: Montserrat;
+    font-weight: bold;
+    margin: 0 0 100px 0;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 60px;
+      height: 3px;
+      background-color: colors.$color-red;
+      top: calc(100% + 35px);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    font-family: Roboto;
+    max-width: 960px;
+    color: colors.$color-gray;
+    text-align: center;
+    margin: 0;
+  }
+}

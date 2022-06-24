@@ -1,0 +1,34 @@
+@use "../utils/colors";
+
+.newsletter-form {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__input {
+    width: 230px;
+  }
+}
+
+
+.input {
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: italic;
+  padding: 9px 12px;
+  border: 1px colors.$color-light-gray solid;
+}
+
+
+.label {
+  &--hidden {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+  }
+}
